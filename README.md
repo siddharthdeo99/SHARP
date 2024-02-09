@@ -2,23 +2,20 @@
 SHARP (Algorithms for Human Activity Recognition with IEEE 802.11ac Wi-Fi Router) is a repository containing Python code for processing and analyzing Wi-Fi channel frequency response (CFR) data collected in an IEEE 802.11ac network for human activity recognition. The repository provides scripts for phase sanitization, Doppler computation, dataset creation, training learning algorithms for human activity recognition (HAR), inference, and performance evaluation. Algorithms for human activity recognition with a commercial IEEE 802.11ac router @ 5 GHz, 80 MHz of bandwidth.
 
 ## Table of Contents
-- [Introduction](#sharp-algorithms-for-human-activity-recognition-with-ieee-80211ac-wi-fi-router)
 - [How to Use](#how-to-use)
 - [Phase Sanitization](#phase-sanitization)
 - [Doppler Computation](#doppler-computation)
 - [Dataset Creation](#dataset-creation)
-- [Training the Learning Algorithm](#training-the-learning-algorithm)
-- [Inference](#inference)
-- [Performance Evaluation](#performance-evaluation)
+- [Understanding Doppler Plot Values](#understanding-doppler-plot-values)
+- [Train the Learning Algorithm for HAR](#train-the-learning-algorithm-for-har)
 - [Parameters](#parameters)
-- [Requirements](#requirements)
-- [License](#license)
+- [Python and Relevant Libraries Version](#python-and-relevant-libraries-version)
 
-## How to use
+# How to use
 Clone the repository and enter the folder with the python code:
 ```bash
 cd <your_path>
-git clone https://github.com/francescamen/SHARP
+git clone git.url
 ```
 
 Download the input data from http://researchdata.cab.unipd.it/id/eprint/624 and unzip the file.
@@ -95,7 +92,7 @@ python CSI_phase_sanitization_signal_reconstruction.py <'directory of the proces
 ```
 e.g., python CSI_phase_sanitization_signal_reconstruction.py ./phase_processing/ ./processed_phase/ 1 4 0 -1
 
-## Doppler computation
+# Doppler computation
 
 The `CSI_doppler_computation.py` script processes Wi-Fi data to understand human movement through the Doppler effect. It analyzes changes in the Wi-Fi signal caused by human motion.
 
