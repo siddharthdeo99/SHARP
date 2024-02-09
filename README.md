@@ -144,6 +144,8 @@ python CSI_doppler_create_dataset_test.py <'directory of the Doppler data'> <'su
 
 ### Understanding Doppler Plot Values
 
+![CSI Doppler Activity S2a Running](https://i.ibb.co/2kZTZzX/csi-doppler-activity-logs-S2a-R.png)
+
 When analyzing Doppler plots generated from radar or sensor data, it's essential to interpret the velocity and power values correctly. Here's how to read the plot values with velocity and power represented in dB:
 
 #### Velocity Axis:
